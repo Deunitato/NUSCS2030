@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"cs2030.simulator","l":"EventSimulator"},{"p":"cs2030.simulator","l":"Human"},{"p":"<Unnamed>","l":"Main"},{"p":"cs2030.simulator","l":"SelfCheckout"}]

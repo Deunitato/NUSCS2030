@@ -1,0 +1,49 @@
+import java.util.*;
+public class HelloWorld{
+
+     public static void main(String []args){
+       // System.out.println("Hello World");
+         PriorityQueue<String> queue = new PriorityQueue<String>(new e()); 
+        String st1 = "0.500 1 arrives";
+        String st2 = "0.700 2 arrives";
+         String st3 = "0.600 2 arrives";
+          String st4 = "0.900 1 arrives";
+           String st5 = "1.200 1 arrives";
+            String st6 = "0.900 1 done";
+        queue.add(st6);
+        queue.add(st2);
+        queue.add(st1);
+        queue.add(st4);
+        queue.add(st3);
+        queue.add(st5);
+        
+        System.out.println("The PriorityQueue: " + queue); 
+  
+        // Creating the array and using toArray() 
+        Object[] arr = queue.toArray(); 
+  
+        System.out.println("The array is:"); 
+        for (int j = 0; j < arr.length; j++) 
+            System.out.println(arr[j]); 
+    } 
+     
+     
+    
+
+}
+
+class e implements Comparator<String>{
+    
+    @Override
+     public int compare(String str1, String str2) 
+    { 
+        
+        double first_Str; 
+        double second_Str; 
+        first_Str = Double.parseDouble(str1.substring(0, 5)+str1.substring(6,7)); 
+        second_Str = Double.parseDouble(str2.substring(0, 5)+str1.substring(6,7));
+       System.out.println(first_Str);
+      int s=Double.compare(first_Str,second_Str);
+      return s;
+    } 
+}

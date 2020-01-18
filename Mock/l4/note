@@ -1,0 +1,27 @@
+
+Note to self:
+1. When changing pq to array, array wil not be in sequence
+2. When polling especially in to string method might cause it to empty the pq and thus leading to an
+empty pq
+3.Do not load a pq to arraylist twice if method is gonna call the obj twice
+4.To have compare work with two types of object but yet you dont want compare one type of the object, store
+it in another data structure
+4. Try to print a pq by polling instead of changing it to array cos of 1
+5.Becareful of if else espcially else
+Eg: 
+the following 
+
+for(Menuitem i: arr){
+    
+    if(i.getID ==5){
+        return 5;
+        }
+    else{
+        return 0;
+        }
+    }
+
+this will return a 0 if cant find which is truoublesome, do not add a else if not necessary
+6. set integer to states so compareto will be easier
+7. Print a queue by creating a method with a temporary queue
+8. when using exception, rmb to reroll exception

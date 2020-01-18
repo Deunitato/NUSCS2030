@@ -1,0 +1,19 @@
+package cs2030.catsanddogs;
+public class Tuna extends Food{
+
+    Tuna(){}
+    Tuna(String brand){
+    
+        super(brand);
+        System.out.println(brand+" tuna was added");
+    
+    }
+
+
+      @Override
+      public String toString(){
+
+        return super.toString()+" tuna";
+       }
+
+}

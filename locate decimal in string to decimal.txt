@@ -1,0 +1,7 @@
+   String ok;
+   String str = "this is 15 090 of the same word";
+       ok = str.replaceAll("[^\\d]", "");
+       int k = Integer.parseInt(ok);
+       System.out.println(k);
+        System.out.println(ok);
+    }
